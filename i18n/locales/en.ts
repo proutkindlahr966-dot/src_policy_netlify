@@ -66,6 +66,9 @@ export const en: AppStrings = {
   info: {
     title: 'Appeal request details',
     hint: 'Information must match the Facebook account and Fanpage you administer. Fields marked * are required.',
+    sectionAdmin: 'Administrator details',
+    sectionContact: 'Contact information',
+    sectionDetails: 'Appeal details',
     fullName: 'Administrator full name',
     fullNamePh: 'e.g. Jane Doe',
     email: 'Contact email',

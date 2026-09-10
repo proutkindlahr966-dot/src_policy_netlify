@@ -65,6 +65,9 @@ export const he: AppStrings = {
   info: {
     title: 'פרטי בקשת הערעור',
     hint: 'המידע חייב להתאים לחשבון Facebook ולדף שאת/ה מנהל/ת. שדות המסומנים ב-* הם חובה.',
+    sectionAdmin: 'פרטי מנהל',
+    sectionContact: 'פרטי קשר',
+    sectionDetails: 'פרטי הערעור',
     fullName: 'שם מלא של מנהל/ת',
     fullNamePh: 'לדוגמה: ישראל ישראלי',
     email: 'דוא"ל ליצירת קשר',

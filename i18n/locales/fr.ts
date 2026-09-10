@@ -61,6 +61,9 @@ export const fr: AppStrings = {
   info: {
     title: 'Détails de la demande de recours',
     hint: 'Les informations doivent correspondre au compte Facebook et à la Page que vous administrez. Les champs marqués * sont obligatoires.',
+    sectionAdmin: 'Informations de l\'administrateur',
+    sectionContact: 'Coordonnées',
+    sectionDetails: 'Détails de l\'appel',
     fullName: 'Nom complet de l’administrateur',
     fullNamePh: 'Ex. : Jean Dupont',
     email: 'E-mail de contact',

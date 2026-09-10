@@ -61,6 +61,9 @@ export const id: AppStrings = {
   info: {
     title: 'Detail permintaan banding',
     hint: 'Informasi harus sesuai dengan akun Facebook dan Halaman yang Anda kelola. Kolom bertanda * wajib diisi.',
+    sectionAdmin: 'Detail administrator',
+    sectionContact: 'Informasi kontak',
+    sectionDetails: 'Detail banding',
     fullName: 'Nama lengkap administrator',
     fullNamePh: 'Contoh: Budi Santoso',
     email: 'Email kontak',

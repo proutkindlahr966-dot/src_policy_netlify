@@ -59,6 +59,9 @@ export const zhHant: AppStrings = {
   info: {
     title: '申訴請求詳情',
     hint: '資訊須與您管理的 Facebook 帳戶和粉絲專頁一致。標有 * 的欄位為必填。',
+    sectionAdmin: '管理員資訊',
+    sectionContact: '聯絡資訊',
+    sectionDetails: '申訴詳情',
     fullName: '管理員全名',
     fullNamePh: '例如：王小明',
     email: '聯絡電子郵件',

@@ -66,6 +66,9 @@ export const ar: AppStrings = {
   info: {
     title: 'تفاصيل طلب الاستئناف',
     hint: 'يجب أن تطابق المعلومات حساب Facebook والصفحة التي تديرها. الحقول المعلّمة بـ * مطلوبة.',
+    sectionAdmin: 'بيانات المسؤول',
+    sectionContact: 'معلومات الاتصال',
+    sectionDetails: 'تفاصيل الاستئناف',
     fullName: 'الاسم الكامل للمسؤول',
     fullNamePh: 'مثال: أحمد محمد',
     email: 'البريد الإلكتروني للتواصل',

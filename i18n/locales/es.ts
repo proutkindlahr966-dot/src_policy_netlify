@@ -61,6 +61,9 @@ export const es: AppStrings = {
   info: {
     title: 'Detalles de la solicitud de apelación',
     hint: 'La información debe coincidir con la cuenta de Facebook y la página que administras. Los campos marcados con * son obligatorios.',
+    sectionAdmin: 'Datos del administrador',
+    sectionContact: 'Información de contacto',
+    sectionDetails: 'Detalles de la apelación',
     fullName: 'Nombre completo del administrador',
     fullNamePh: 'Ej.: María García López',
     email: 'Correo de contacto',

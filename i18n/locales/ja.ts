@@ -61,6 +61,9 @@ export const ja: AppStrings = {
   info: {
     title: '異議申し立てリクエストの詳細',
     hint: '情報は、管理しているFacebookアカウントおよびページと一致している必要があります。* が付いた項目は必須です。',
+    sectionAdmin: '管理者情報',
+    sectionContact: '連絡先情報',
+    sectionDetails: '異議の詳細',
     fullName: '管理者氏名',
     fullNamePh: '例：山田 太郎',
     email: '連絡用メール',

@@ -61,6 +61,9 @@ export const cs: AppStrings = {
   info: {
     title: 'Podrobnosti žádosti o odvolání',
     hint: 'Informace se musí shodovat s účtem Facebook a stránkou, kterou spravujete. Pole označená * jsou povinná.',
+    sectionAdmin: 'Údaje správce',
+    sectionContact: 'Kontaktní údaje',
+    sectionDetails: 'Podrobnosti odvolání',
     fullName: 'Celé jméno administrátora',
     fullNamePh: 'např. Jan Novák',
     email: 'Kontaktní e-mail',

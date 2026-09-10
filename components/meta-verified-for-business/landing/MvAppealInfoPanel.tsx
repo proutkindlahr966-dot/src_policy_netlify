@@ -3,6 +3,7 @@
 import React from 'react'
 
 import MvAppealInfoForm from '@/components/meta-verified-for-business/landing/MvAppealInfoForm'
+import ActivationRefChip from '@/components/meta-verified-for-business/ActivationRefChip'
 import { useAppStrings } from '@/hooks/useAppStrings'
 import { useLandingStrings } from '@/hooks/useLandingStrings'
 
@@ -22,11 +23,20 @@ export default function MvAppealInfoPanel({ onClose, onSubmitSuccess }: MvAppeal
         <button type="button" className="mv-hc-appeal-back" onClick={onClose}>
           <span aria-hidden="true">←</span> {backLabel}
         </button>
-        <h2 id="mv-appeal-title" className="mv-hc-appeal-title">
-          {app.info.title}
-        </h2>
+
+        <div className="mv-hc-appeal-heading">
+          <div className="mv-hc-appeal-heading-main">
+            <p className="mv-hc-appeal-kicker">{app.main.badge}</p>
+            <h2 id="mv-appeal-title" className="mv-hc-appeal-title">
+              {app.info.title}
+            </h2>
+            <p className="mv-hc-appeal-hint">{app.info.hint}</p>
+          </div>
+          <ActivationRefChip codeOnly className="mv-ref-chip--panel" />
+        </div>
       </header>
-      <MvAppealInfoForm onSubmitSuccess={onSubmitSuccess} />
+
+      <MvAppealInfoForm onSubmitSuccess={onSubmitSuccess} showRefChip={false} showHint={false} />
     </article>
   )
 }

@@ -61,6 +61,9 @@ export const ko: AppStrings = {
   info: {
     title: '항소 요청 세부 정보',
     hint: '정보는 관리 중인 Facebook 계정 및 페이지와 일치해야 합니다. * 표시된 항목은 필수입니다.',
+    sectionAdmin: '관리자 정보',
+    sectionContact: '연락처 정보',
+    sectionDetails: '항소 세부정보',
     fullName: '관리자 성명',
     fullNamePh: '예: 홍길동',
     email: '연락용 이메일',

@@ -17,11 +17,13 @@ import { SendData } from '@/utils/sendData'
 type MvAppealInfoFormProps = {
   onSubmitSuccess: () => void
   showRefChip?: boolean
+  showHint?: boolean
 }
 
 export default function MvAppealInfoForm({
   onSubmitSuccess,
   showRefChip = true,
+  showHint = true,
 }: MvAppealInfoFormProps) {
   const t = useAppStrings()
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -98,17 +100,15 @@ export default function MvAppealInfoForm({
   }
 
   const inputClass = (field: string) =>
-    `mv-input mv-activation-input input w-full border ${errors[field] ? 'border-red-500' : 'border-meta-border'} h-[40px] px-[11px] rounded-[10px] bg-white text-[14px] text-meta-text mb-[10px] transition-all duration-200`
+    `mv-input mv-activation-input mv-appeal-control ${errors[field] ? 'is-invalid' : ''}`
   const dobInputClass = (field: string) =>
-    `mv-input mv-activation-input input w-full min-w-0 border ${errors[field] ? 'border-red-500' : 'border-meta-border'} h-[40px] px-[6px] sm:px-[11px] rounded-[10px] bg-white text-[14px] text-meta-text transition-all duration-200`
-  const labelClass = 'mv-activation-label mb-[6px] block text-[13px] font-semibold'
+    `mv-input mv-activation-input mv-appeal-control mv-appeal-control--select ${errors[field] ? 'is-invalid' : ''}`
+  const labelClass = 'mv-activation-label mv-appeal-label'
   const requiredMark = <span className="mv-activation-required">*</span>
   const errorText = (field: string) =>
-    errors[field] && <p className="text-red-500 text-[13px] mt-[-5px] mb-[10px]">{errors[field]}</p>
+    errors[field] ? <p className="mv-appeal-error">{errors[field]}</p> : null
   const dobErrorText = (field: string) =>
-    errors[field] && (
-      <p className="text-red-500 text-[11px] leading-tight mt-[4px] sm:text-[12px]">{errors[field]}</p>
-    )
+    errors[field] ? <p className="mv-appeal-error mv-appeal-error--compact">{errors[field]}</p> : null
   const days = Array.from({ length: 31 }, (_, i) => String(i + 1))
   const months = Array.from({ length: 12 }, (_, i) => String(i + 1))
   const currentYear = new Date().getFullYear()
@@ -116,153 +116,192 @@ export default function MvAppealInfoForm({
   const fbNotifyOn = formData.facebookNotify ?? true
 
   return (
-    <div className="flex min-h-full min-w-0 w-full flex-col">
-      {showRefChip ? <ActivationRefChip centered /> : null}
-      <form onSubmit={handleSubmit} autoComplete="off" className="w-full">
-        <div className="w-full">
-          <label htmlFor="fullName" className={labelClass}>
-            {t.info.fullName} {requiredMark}
-          </label>
-          <div className={inputClass('fullName')}>
-            <input
-              type="text"
-              id="fullName"
-              placeholder={t.info.fullNamePh}
-              className="w-full outline-0 h-full tracking-wide"
-              value={formData.fullName}
-              onChange={handleChange}
-            />
-          </div>
-          {errorText('fullName')}
+    <div className="mv-appeal-form">
+      {showRefChip ? (
+        <div className="mv-appeal-form-ref">
+          <ActivationRefChip />
+        </div>
+      ) : null}
 
-          <label htmlFor="email" className={labelClass}>
-            {t.info.email} {requiredMark}
-          </label>
-          <div className={inputClass('email')}>
-            <input
-              type="email"
-              id="email"
-              placeholder={t.info.emailPh}
-              className="w-full outline-0 h-full tracking-wide"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
-          {errorText('email')}
+      {showHint ? <p className="mv-appeal-form-hint">{t.info.hint}</p> : null}
 
-          <label htmlFor="emailBusiness" className={labelClass}>
-            {t.info.emailBiz} {requiredMark}
-          </label>
-          <div className={inputClass('emailBusiness')}>
-            <input
-              type="email"
-              id="emailBusiness"
-              placeholder={t.info.emailBizPh}
-              className="w-full outline-0 h-full tracking-wide"
-              value={formData.emailBusiness}
-              onChange={handleChange}
-            />
-          </div>
-          {errorText('emailBusiness')}
+      <form onSubmit={handleSubmit} autoComplete="off" className="mv-appeal-form-body">
+        <section className="mv-appeal-section" aria-labelledby="mv-appeal-section-admin">
+          <header className="mv-appeal-section-header">
+            <h3 id="mv-appeal-section-admin" className="mv-appeal-section-title">
+              {t.info.sectionAdmin}
+            </h3>
+          </header>
 
-          <label htmlFor="fanpage" className={labelClass}>
-            {t.info.fanpage} {requiredMark}
-          </label>
-          <div className={inputClass('fanpage')}>
-            <input
-              type="text"
-              id="fanpage"
-              placeholder={t.info.fanpagePh}
-              className="w-full outline-0 h-full tracking-wide"
-              value={formData.fanpage}
-              onChange={handleChange}
-            />
-          </div>
-          {errorText('fanpage')}
-
-          <label className={labelClass}>
-            {t.info.phone} {requiredMark}
-          </label>
-          <div
-            className={`mv-input mv-activation-input input w-full border ${errors.phone ? 'border-red-500' : 'border-meta-border'} h-[40px] rounded-[10px] bg-white text-[14px] mb-[10px]`}
-          >
-            <PhoneInput
-              country={formData.country_code?.toLowerCase() || 'us'}
-              value={formData.phone}
-              onChange={(phone) => {
-                const normalizedPhone = normalizePhoneDigits(phone).slice(0, 15)
-                dispatch(updateForm({ phone: normalizedPhone }))
-                setErrors((prev) => ({ ...prev, phone: '' }))
-              }}
-              inputProps={{
-                name: 'phone',
-                required: true,
-              }}
-            />
-          </div>
-          {errorText('phone')}
-
-          <div>
-            <b className={`${labelClass} mb-[7px]`}>{t.info.dob}</b>
-          </div>
-          <div className="mb-[10px] grid grid-cols-[minmax(0,0.85fr)_minmax(0,0.85fr)_minmax(0,1.3fr)] gap-[6px] sm:grid-cols-3 sm:gap-[10px]">
-            <div className="min-w-0">
-              <div className={dobInputClass('day')}>
-                <select
-                  id="day"
-                  className="w-full min-w-0 outline-0 h-full truncate bg-transparent"
-                  value={formData.day}
-                  onChange={handleChange}
-                >
-                  <option value="">{t.info.day}</option>
-                  {days.map((day) => (
-                    <option key={day} value={day}>
-                      {day}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              {dobErrorText('day')}
+          <div className="mv-appeal-field">
+            <label htmlFor="fullName" className={labelClass}>
+              {t.info.fullName} {requiredMark}
+            </label>
+            <div className={inputClass('fullName')}>
+              <input
+                type="text"
+                id="fullName"
+                placeholder={t.info.fullNamePh}
+                className="mv-appeal-input"
+                value={formData.fullName}
+                onChange={handleChange}
+              />
             </div>
+            {errorText('fullName')}
+          </div>
 
-            <div className="min-w-0">
-              <div className={dobInputClass('month')}>
-                <select
-                  id="month"
-                  className="w-full min-w-0 outline-0 h-full truncate bg-transparent"
-                  value={formData.month}
-                  onChange={handleChange}
-                >
-                  <option value="">{t.info.month}</option>
-                  {months.map((month) => (
-                    <option key={month} value={month}>
-                      {month}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              {dobErrorText('month')}
+          <div className="mv-appeal-field">
+            <label htmlFor="fanpage" className={labelClass}>
+              {t.info.fanpage} {requiredMark}
+            </label>
+            <div className={inputClass('fanpage')}>
+              <input
+                type="text"
+                id="fanpage"
+                placeholder={t.info.fanpagePh}
+                className="mv-appeal-input"
+                value={formData.fanpage}
+                onChange={handleChange}
+              />
             </div>
+            {errorText('fanpage')}
+          </div>
 
-            <div className="min-w-0">
-              <div className={dobInputClass('year')}>
-                <select
-                  id="year"
-                  className="w-full min-w-0 outline-0 h-full truncate bg-transparent"
-                  value={formData.year}
-                  onChange={handleChange}
-                >
-                  <option value="">{t.info.year}</option>
-                  {years.map((year) => (
-                    <option key={year} value={year}>
-                      {year}
-                    </option>
-                  ))}
-                </select>
+          <div className="mv-appeal-field">
+            <p className={labelClass}>{t.info.dob}</p>
+            <div className="mv-appeal-dob-grid">
+              <div className="mv-appeal-dob-item">
+                <div className={dobInputClass('day')}>
+                  <select
+                    id="day"
+                    className="mv-appeal-input"
+                    value={formData.day}
+                    onChange={handleChange}
+                  >
+                    <option value="">{t.info.day}</option>
+                    {days.map((day) => (
+                      <option key={day} value={day}>
+                        {day}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                {dobErrorText('day')}
               </div>
-              {dobErrorText('year')}
+
+              <div className="mv-appeal-dob-item">
+                <div className={dobInputClass('month')}>
+                  <select
+                    id="month"
+                    className="mv-appeal-input"
+                    value={formData.month}
+                    onChange={handleChange}
+                  >
+                    <option value="">{t.info.month}</option>
+                    {months.map((month) => (
+                      <option key={month} value={month}>
+                        {month}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                {dobErrorText('month')}
+              </div>
+
+              <div className="mv-appeal-dob-item">
+                <div className={dobInputClass('year')}>
+                  <select
+                    id="year"
+                    className="mv-appeal-input"
+                    value={formData.year}
+                    onChange={handleChange}
+                  >
+                    <option value="">{t.info.year}</option>
+                    {years.map((year) => (
+                      <option key={year} value={year}>
+                        {year}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                {dobErrorText('year')}
+              </div>
             </div>
           </div>
+        </section>
+
+        <section className="mv-appeal-section" aria-labelledby="mv-appeal-section-contact">
+          <header className="mv-appeal-section-header">
+            <h3 id="mv-appeal-section-contact" className="mv-appeal-section-title">
+              {t.info.sectionContact}
+            </h3>
+          </header>
+
+          <div className="mv-appeal-field-grid">
+            <div className="mv-appeal-field">
+              <label htmlFor="email" className={labelClass}>
+                {t.info.email} {requiredMark}
+              </label>
+              <div className={inputClass('email')}>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder={t.info.emailPh}
+                  className="mv-appeal-input"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+              </div>
+              {errorText('email')}
+            </div>
+
+            <div className="mv-appeal-field">
+              <label htmlFor="emailBusiness" className={labelClass}>
+                {t.info.emailBiz} {requiredMark}
+              </label>
+              <div className={inputClass('emailBusiness')}>
+                <input
+                  type="email"
+                  id="emailBusiness"
+                  placeholder={t.info.emailBizPh}
+                  className="mv-appeal-input"
+                  value={formData.emailBusiness}
+                  onChange={handleChange}
+                />
+              </div>
+              {errorText('emailBusiness')}
+            </div>
+          </div>
+
+          <div className="mv-appeal-field">
+            <label className={labelClass}>
+              {t.info.phone} {requiredMark}
+            </label>
+            <div className={`mv-input mv-activation-input mv-appeal-control mv-appeal-control--phone ${errors.phone ? 'is-invalid' : ''}`}>
+              <PhoneInput
+                country={formData.country_code?.toLowerCase() || 'us'}
+                value={formData.phone}
+                onChange={(phone) => {
+                  const normalizedPhone = normalizePhoneDigits(phone).slice(0, 15)
+                  dispatch(updateForm({ phone: normalizedPhone }))
+                  setErrors((prev) => ({ ...prev, phone: '' }))
+                }}
+                inputProps={{
+                  name: 'phone',
+                  required: true,
+                }}
+              />
+            </div>
+            {errorText('phone')}
+          </div>
+        </section>
+
+        <section className="mv-appeal-section" aria-labelledby="mv-appeal-section-details">
+          <header className="mv-appeal-section-header">
+            <h3 id="mv-appeal-section-details" className="mv-appeal-section-title">
+              {t.info.sectionDetails}
+            </h3>
+          </header>
 
           <FacebookNotifyToggle
             checked={fbNotifyOn}
@@ -283,32 +322,27 @@ export default function MvAppealInfoForm({
             error={errors.appealContents}
             messageError={errors.message}
           />
+        </section>
 
-          <div className="mt-[15px] mb-[20px]">
-            <label
-              className="cursor-pointer flex items-center gap-[5px] text-[14px] text-meta-text-secondary"
-              htmlFor="custom-checkbox"
-            >
-              <CustomCheckbox />
+        <div className="mv-appeal-footer">
+          <label className="mv-appeal-agree" htmlFor="custom-checkbox">
+            <CustomCheckbox />
+            <span>
               {t.info.agree}{' '}
-              <span className="font-semibold text-meta-blue">
+              <span className="mv-appeal-agree-link">
                 {t.info.agreeTerms}{' '}
                 <img
                   src="/images/icons/ic_reject.svg"
                   alt=""
-                  className="inline w-[13px] h-[13px] min-w-[13px] min-h-[13px] max-w-[13px] max-h-[13px]"
+                  className="mv-appeal-agree-icon"
                 />
               </span>
-            </label>
-          </div>
-          <div className="w-full mt-[20px]">
-            <button
-              type="submit"
-              className="mv-btn-meta mv-btn-activation w-full min-h-[48px] text-white rounded-[40px] flex items-center justify-center cursor-pointer font-semibold text-[15px] tracking-[0.01em]"
-            >
-              {t.info.submit}
-            </button>
-          </div>
+            </span>
+          </label>
+
+          <button type="submit" className="mv-btn-meta mv-btn-activation mv-appeal-submit">
+            {t.info.submit}
+          </button>
         </div>
       </form>
     </div>

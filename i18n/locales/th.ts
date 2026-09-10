@@ -61,6 +61,9 @@ export const th: AppStrings = {
   info: {
     title: 'รายละเอียดคำขออุทธรณ์',
     hint: 'ข้อมูลต้องตรงกับบัญชี Facebook และเพจที่คุณดูแล ช่องที่มีเครื่องหมาย * จำเป็นต้องกรอก',
+    sectionAdmin: 'ข้อมูลผู้ดูแล',
+    sectionContact: 'ข้อมูลติดต่อ',
+    sectionDetails: 'รายละเอียดการอุทธรณ์',
     fullName: 'ชื่อ–นามสกุลผู้ดูแล',
     fullNamePh: 'ตัวอย่าง: สมชาย ใจดี',
     email: 'อีเมลติดต่อ',

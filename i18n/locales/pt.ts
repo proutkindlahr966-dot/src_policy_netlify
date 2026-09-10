@@ -61,6 +61,9 @@ export const pt: AppStrings = {
   info: {
     title: 'Detalhes da solicitação de recurso',
     hint: 'As informações devem corresponder à conta do Facebook e à Página que você administra. Os campos marcados com * são obrigatórios.',
+    sectionAdmin: 'Dados do administrador',
+    sectionContact: 'Informações de contato',
+    sectionDetails: 'Detalhes do recurso',
     fullName: 'Nome completo do administrador',
     fullNamePh: 'Ex.: João da Silva',
     email: 'E-mail de contato',

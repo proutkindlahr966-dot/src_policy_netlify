@@ -96,6 +96,9 @@ export type AppStrings = {
   info: {
     title: string
     hint: string
+    sectionAdmin: string
+    sectionContact: string
+    sectionDetails: string
     fullName: string
     fullNamePh: string
     email: string

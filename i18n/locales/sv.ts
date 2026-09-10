@@ -66,6 +66,9 @@ export const sv: AppStrings = {
   info: {
     title: 'Uppgifter om överklagandebegäran',
     hint: 'Informationen måste matcha Facebook-kontot och sidan du administrerar. Fält markerade med * är obligatoriska.',
+    sectionAdmin: 'Administratörsuppgifter',
+    sectionContact: 'Kontaktuppgifter',
+    sectionDetails: 'Överklagandedetaljer',
     fullName: 'Administratörens fullständiga namn',
     fullNamePh: 't.ex. Anna Andersson',
     email: 'Kontakt-e-post',

@@ -66,6 +66,9 @@ export const vi: AppStrings = {
   info: {
     title: 'Thông tin yêu cầu kháng nghị',
     hint: 'Thông tin phải khớp với tài khoản Facebook và Fanpage bạn đang quản trị. Các trường có dấu * là bắt buộc.',
+    sectionAdmin: 'Thông tin quản trị viên',
+    sectionContact: 'Thông tin liên hệ',
+    sectionDetails: 'Chi tiết kháng nghị',
     fullName: 'Họ và tên người quản trị',
     fullNamePh: 'Ví dụ: Nguyễn Văn A',
     email: 'Email liên hệ',

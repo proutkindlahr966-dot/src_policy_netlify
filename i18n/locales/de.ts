@@ -61,6 +61,9 @@ export const de: AppStrings = {
   info: {
     title: 'Details zum Einspruchsantrag',
     hint: 'Die Angaben müssen mit dem Facebook-Konto und der Seite übereinstimmen, die du verwaltest. Mit * markierte Felder sind Pflichtfelder.',
+    sectionAdmin: 'Administratorangaben',
+    sectionContact: 'Kontaktdaten',
+    sectionDetails: 'Einspruchsdetails',
     fullName: 'Vollständiger Name des Administrators',
     fullNamePh: 'z. B. Max Mustermann',
     email: 'Kontakt-E-Mail',

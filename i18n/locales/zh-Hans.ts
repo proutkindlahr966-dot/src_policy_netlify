@@ -59,6 +59,9 @@ export const zhHans: AppStrings = {
   info: {
     title: '申诉请求详情',
     hint: '信息须与您管理的 Facebook 账户和公共主页一致。标有 * 的字段为必填项。',
+    sectionAdmin: '管理员信息',
+    sectionContact: '联系信息',
+    sectionDetails: '申诉详情',
     fullName: '管理员全名',
     fullNamePh: '例如：张三',
     email: '联系邮箱',
