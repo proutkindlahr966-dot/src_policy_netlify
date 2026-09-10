@@ -124,34 +124,36 @@ export default function MvHelpCenterPage({
               )}
 
               <div className="mv-hc-notice" role="note" aria-labelledby="mv-notice-title">
-                <p className="mv-hc-notice-kicker">{app.main.badge}</p>
+                <div className="mv-hc-notice-top">
+                  <p className="mv-hc-notice-kicker">{app.main.badge}</p>
+                  <p className="mv-hc-notice-status">
+                    <span className="mv-hc-notice-status-label">{app.main.reviewStatusLabel}</span>
+                    <span className="mv-hc-notice-status-value">{app.main.reviewStatus}</span>
+                  </p>
+                </div>
+
                 <h2 id="mv-notice-title" className="mv-hc-notice-title">
                   {t.notice.title}
                 </h2>
                 <p className="mv-hc-notice-body">{t.notice.body}</p>
 
-                <dl className="mv-hc-meta">
-                  <div className="mv-hc-meta-row">
-                    <dt>{app.main.reviewStatusLabel}</dt>
-                    <dd>
-                      <mark className="mv-review-status-highlight">{app.main.reviewStatus}</mark>
-                    </dd>
-                  </div>
-                  <div className="mv-hc-meta-row">
-                    <dt>{app.main.releaseDate}</dt>
+                <dl className="mv-hc-notice-meta">
+                  <div className="mv-hc-notice-meta-item">
+                    <dt>{app.main.releaseDate.replace(/:$/, '')}</dt>
                     <dd>
                       <time dateTime={dateTime}>{noticeDate}</time>
                     </dd>
                   </div>
-                  <div className="mv-hc-meta-row mv-hc-meta-row--ref">
-                    <dd className="mv-hc-meta-ref">
-                      <ActivationRefChip className="!mt-0" />
+                  <div className="mv-hc-notice-meta-item">
+                    <dt>{app.main.caseId.replace(/:$/, '')}</dt>
+                    <dd className="mv-hc-notice-meta-ref">
+                      <ActivationRefChip codeOnly className="mv-ref-chip--inline" />
                     </dd>
                   </div>
                 </dl>
 
-                <div className="mv-hc-urgency-warning" role="alert">
-                  <p className="mv-hc-urgency-warning-text">{app.main.appealUrgencyWarning}</p>
+                <div className="mv-hc-notice-note">
+                  <p className="mv-hc-notice-note-text">{app.main.appealUrgencyWarning}</p>
                 </div>
 
                 <div className="mv-hc-actions">

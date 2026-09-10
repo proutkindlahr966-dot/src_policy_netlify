@@ -7,7 +7,7 @@ export const en: AppStrings = {
     facebook: 'Facebook',
   },
   main: {
-    badge: 'NOTICE',
+    badge: 'Official notice',
     releaseDate: 'Notice date:',
     title: 'Your Fanpage may have violated Community Standards',
     lead1:
@@ -18,7 +18,7 @@ export const en: AppStrings = {
     reviewStatusLabel: 'Status:',
     reviewStatus: 'Pending review — appeal request',
     appealUrgencyWarning:
-      'If you do not submit an appeal soon, your Fanpage may be restricted or permanently disabled.',
+      'To help avoid Fanpage restrictions or disabling, please submit an appeal request as soon as possible.',
     programScope:
       'Appeals are processed under the Community Standards published on the Meta Transparency Center.',
     activationStepsTitle: 'Three-step process',

@@ -40,15 +40,17 @@ export type LandingFooterColumn = {
   links: { label: string }[]
 }
 
-export type LandingNavLink =
-  | { label: string; type: 'link'; href: string }
-  | { label: string; type: 'menu' }
+export type LandingNavItem = {
+  label: string
+  href: string
+}
 
 export type LandingStrings = {
   header: {
     logoLabel: string
     helpCenterTitle: string
-    nav: LandingNavLink[]
+    /** Nhãn ngắn cho nav — href trỏ tới section trên trang */
+    nav: LandingNavItem[]
     loginCta: string
     loginAria: string
     cta: string

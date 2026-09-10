@@ -5,39 +5,13 @@ export const frLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: 'Centre de transparence',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'Politiques',
-        type: 'menu',
-      },
-      {
-        label: 'Application',
-        type: 'menu',
-      },
-      {
-        label: 'Sécurité',
-        type: 'menu',
-      },
-      {
-        label: 'Caractéristiques',
-        type: 'menu',
-      },
-      {
-        label: 'Gouvernance',
-        type: 'menu',
-      },
-      {
-        label: 'Outils de recherche',
-        type: 'menu',
-      },
-      {
-        label: 'Rapports',
-        type: 'menu',
-      },
+      { label: 'Introduction', href: '#mv-intro-title' },
+      { label: 'Conséquences', href: '#mv-consequences-title' },
+      { label: 'Voix', href: '#mv-voice-title' },
+      { label: 'Processus', href: '#mv-steps-title' },
+      { label: 'Infractions', href: '#mv-violations-title' },
+      { label: 'FAQ', href: '#mv-faq-title' },
+      { label: 'Appel', href: '#mv-cta-title' },
     ],
     loginCta: 'Connectez-vous avec Facebook',
     loginAria: 'Connectez-vous avec Facebook pour gérer votre page',

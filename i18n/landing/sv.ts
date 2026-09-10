@@ -5,39 +5,13 @@ export const svLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: 'Transparency Center',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'Policyer',
-        type: 'menu',
-      },
-      {
-        label: 'Tillämpning',
-        type: 'menu',
-      },
-      {
-        label: 'Säkerhet',
-        type: 'menu',
-      },
-      {
-        label: 'Drag',
-        type: 'menu',
-      },
-      {
-        label: 'Styrning',
-        type: 'menu',
-      },
-      {
-        label: 'Forskningsverktyg',
-        type: 'menu',
-      },
-      {
-        label: 'Rapporter',
-        type: 'menu',
-      },
+      { label: 'Introduktion', href: '#mv-intro-title' },
+      { label: 'Konsekvenser', href: '#mv-consequences-title' },
+      { label: 'Röst', href: '#mv-voice-title' },
+      { label: 'Process', href: '#mv-steps-title' },
+      { label: 'Överträdelser', href: '#mv-violations-title' },
+      { label: 'FAQ', href: '#mv-faq-title' },
+      { label: 'Överklagan', href: '#mv-cta-title' },
     ],
     loginCta: 'Logga in med Facebook',
     loginAria: 'Logga in med Facebook för att hantera din sida',

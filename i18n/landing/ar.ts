@@ -5,39 +5,13 @@ export const arLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: 'مركز الشفافية',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'السياسات',
-        type: 'menu',
-      },
-      {
-        label: 'التنفيذ',
-        type: 'menu',
-      },
-      {
-        label: 'حماية',
-        type: 'menu',
-      },
-      {
-        label: 'سمات',
-        type: 'menu',
-      },
-      {
-        label: 'الحكم',
-        type: 'menu',
-      },
-      {
-        label: 'أدوات البحث',
-        type: 'menu',
-      },
-      {
-        label: 'التقارير',
-        type: 'menu',
-      },
+      { label: 'مقدمة', href: '#mv-intro-title' },
+      { label: 'العواقب', href: '#mv-consequences-title' },
+      { label: 'الصوت', href: '#mv-voice-title' },
+      { label: 'العملية', href: '#mv-steps-title' },
+      { label: 'الانتهاكات', href: '#mv-violations-title' },
+      { label: 'الأسئلة', href: '#mv-faq-title' },
+      { label: 'الاستئناف', href: '#mv-cta-title' },
     ],
     loginCta: 'تسجيل الدخول باستخدام Facebook',
     loginAria: 'قم بتسجيل الدخول باستخدام Facebook لإدارة Fanpage الخاصة بك',

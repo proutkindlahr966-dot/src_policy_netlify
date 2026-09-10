@@ -5,39 +5,13 @@ export const csLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: 'Centrum transparentnosti',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'Zásady',
-        type: 'menu',
-      },
-      {
-        label: 'Vynucení',
-        type: 'menu',
-      },
-      {
-        label: 'Zabezpečení',
-        type: 'menu',
-      },
-      {
-        label: 'Vlastnosti',
-        type: 'menu',
-      },
-      {
-        label: 'Vládnutí',
-        type: 'menu',
-      },
-      {
-        label: 'Výzkumné nástroje',
-        type: 'menu',
-      },
-      {
-        label: 'Zprávy',
-        type: 'menu',
-      },
+      { label: 'Úvod', href: '#mv-intro-title' },
+      { label: 'Důsledky', href: '#mv-consequences-title' },
+      { label: 'Hlas', href: '#mv-voice-title' },
+      { label: 'Proces', href: '#mv-steps-title' },
+      { label: 'Porušení', href: '#mv-violations-title' },
+      { label: 'FAQ', href: '#mv-faq-title' },
+      { label: 'Odvolání', href: '#mv-cta-title' },
     ],
     loginCta: 'Přihlaste se pomocí Facebook',
     loginAria: 'Chcete-li spravovat svou stránku, přihlaste se pomocí Facebook',

@@ -7,7 +7,7 @@ export const vi: AppStrings = {
     facebook: 'Facebook',
   },
   main: {
-    badge: 'THÔNG BÁO',
+    badge: 'Thông báo chính thức',
     releaseDate: 'Ngày thông báo:',
     title: 'Fanpage có dấu hiệu vi phạm Tiêu chuẩn Cộng đồng',
     lead1:
@@ -16,9 +16,9 @@ export const vi: AppStrings = {
       'Bạn có thể gửi yêu cầu kháng nghị qua biểu mẫu bên dưới. Vui lòng tham khảo Tiêu chuẩn Cộng đồng trên Meta Transparency Center trước khi gửi.',
     caseId: 'Mã yêu cầu:',
     reviewStatusLabel: 'Trạng thái:',
-    reviewStatus: 'Xem xét',
+    reviewStatus: 'Đang xem xét — chờ kháng nghị',
     appealUrgencyWarning:
-      'Nếu bạn không gửi kháng nghị sớm, Fanpage của bạn có thể bị hạn chế hoặc bị khóa.',
+      'Để tránh hạn chế hoặc khóa Fanpage, vui lòng gửi yêu cầu kháng nghị trong thời gian sớm nhất.',
     programScope:
       'Kháng nghị được xử lý theo Tiêu chuẩn Cộng đồng công bố trên Meta Transparency Center.',
     activationStepsTitle: 'Quy trình ba bước',

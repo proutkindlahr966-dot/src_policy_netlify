@@ -5,39 +5,13 @@ export const zhHantLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: '透明度中心',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: '政策',
-        type: 'menu',
-      },
-      {
-        label: '執行',
-        type: 'menu',
-      },
-      {
-        label: '安全',
-        type: 'menu',
-      },
-      {
-        label: '特徵',
-        type: 'menu',
-      },
-      {
-        label: '治理',
-        type: 'menu',
-      },
-      {
-        label: '研究工具',
-        type: 'menu',
-      },
-      {
-        label: '報告',
-        type: 'menu',
-      },
+      { label: '介紹', href: '#mv-intro-title' },
+      { label: '後果', href: '#mv-consequences-title' },
+      { label: '發聲', href: '#mv-voice-title' },
+      { label: '流程', href: '#mv-steps-title' },
+      { label: '違規', href: '#mv-violations-title' },
+      { label: '常見問題', href: '#mv-faq-title' },
+      { label: '申訴', href: '#mv-cta-title' },
     ],
     loginCta: '使用 Facebook 登入',
     loginAria: '使用 Facebook 登入來管理您的主頁',

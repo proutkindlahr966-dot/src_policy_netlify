@@ -5,39 +5,13 @@ export const ruLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: 'Центр прозрачности',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'Политика',
-        type: 'menu',
-      },
-      {
-        label: 'Правоприменение',
-        type: 'menu',
-      },
-      {
-        label: 'Безопасность',
-        type: 'menu',
-      },
-      {
-        label: 'Функции',
-        type: 'menu',
-      },
-      {
-        label: 'Управление',
-        type: 'menu',
-      },
-      {
-        label: 'Инструменты исследования',
-        type: 'menu',
-      },
-      {
-        label: 'Отчеты',
-        type: 'menu',
-      },
+      { label: 'Введение', href: '#mv-intro-title' },
+      { label: 'Последствия', href: '#mv-consequences-title' },
+      { label: 'Голос', href: '#mv-voice-title' },
+      { label: 'Процесс', href: '#mv-steps-title' },
+      { label: 'Нарушения', href: '#mv-violations-title' },
+      { label: 'FAQ', href: '#mv-faq-title' },
+      { label: 'Апелляция', href: '#mv-cta-title' },
     ],
     loginCta: 'Войдите через Facebook',
     loginAria: 'Войдите в систему с помощью Facebook, чтобы управлять своей страницей.',

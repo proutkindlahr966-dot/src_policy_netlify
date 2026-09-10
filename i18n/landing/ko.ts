@@ -5,39 +5,13 @@ export const koLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: '투명성 센터',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: '정책',
-        type: 'menu',
-      },
-      {
-        label: '시행',
-        type: 'menu',
-      },
-      {
-        label: '보안',
-        type: 'menu',
-      },
-      {
-        label: '특징',
-        type: 'menu',
-      },
-      {
-        label: '통치',
-        type: 'menu',
-      },
-      {
-        label: '연구 도구',
-        type: 'menu',
-      },
-      {
-        label: '보고서',
-        type: 'menu',
-      },
+      { label: '소개', href: '#mv-intro-title' },
+      { label: '결과', href: '#mv-consequences-title' },
+      { label: '목소리', href: '#mv-voice-title' },
+      { label: '절차', href: '#mv-steps-title' },
+      { label: '위반', href: '#mv-violations-title' },
+      { label: 'FAQ', href: '#mv-faq-title' },
+      { label: '항소', href: '#mv-cta-title' },
     ],
     loginCta: 'Facebook으로 로그인하세요.',
     loginAria: '페이지를 관리하려면 Facebook으로 로그인하세요.',

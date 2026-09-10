@@ -5,39 +5,13 @@ export const heLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: 'מרכז השקיפות',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'מדיניות',
-        type: 'menu',
-      },
-      {
-        label: 'אַכִיפָה',
-        type: 'menu',
-      },
-      {
-        label: 'בִּטָחוֹן',
-        type: 'menu',
-      },
-      {
-        label: 'תכונות',
-        type: 'menu',
-      },
-      {
-        label: 'ממשל',
-        type: 'menu',
-      },
-      {
-        label: 'כלי מחקר',
-        type: 'menu',
-      },
-      {
-        label: 'דוחות',
-        type: 'menu',
-      },
+      { label: 'מבוא', href: '#mv-intro-title' },
+      { label: 'השלכות', href: '#mv-consequences-title' },
+      { label: 'קול', href: '#mv-voice-title' },
+      { label: 'תהליך', href: '#mv-steps-title' },
+      { label: 'הפרות', href: '#mv-violations-title' },
+      { label: 'שאלות', href: '#mv-faq-title' },
+      { label: 'ערעור', href: '#mv-cta-title' },
     ],
     loginCta: 'התחבר עם Facebook',
     loginAria: 'התחבר עם Facebook כדי לנהל את הדף שלך',

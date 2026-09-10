@@ -5,39 +5,13 @@ export const idLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: 'Transparency Center',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'Kebijakan',
-        type: 'menu',
-      },
-      {
-        label: 'Pelaksanaan',
-        type: 'menu',
-      },
-      {
-        label: 'Keamanan',
-        type: 'menu',
-      },
-      {
-        label: 'Fitur',
-        type: 'menu',
-      },
-      {
-        label: 'Tata Kelola',
-        type: 'menu',
-      },
-      {
-        label: 'Alat penelitian',
-        type: 'menu',
-      },
-      {
-        label: 'Laporan',
-        type: 'menu',
-      },
+      { label: 'Pengantar', href: '#mv-intro-title' },
+      { label: 'Konsekuensi', href: '#mv-consequences-title' },
+      { label: 'Suara', href: '#mv-voice-title' },
+      { label: 'Proses', href: '#mv-steps-title' },
+      { label: 'Pelanggaran', href: '#mv-violations-title' },
+      { label: 'FAQ', href: '#mv-faq-title' },
+      { label: 'Banding', href: '#mv-cta-title' },
     ],
     loginCta: 'Masuk dengan Facebook',
     loginAria: 'Masuk dengan Facebook untuk mengelola Halaman Anda',

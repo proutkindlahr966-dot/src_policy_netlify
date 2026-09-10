@@ -5,39 +5,13 @@ export const jaLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: '透明性センター',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'ポリシー',
-        type: 'menu',
-      },
-      {
-        label: '執行',
-        type: 'menu',
-      },
-      {
-        label: '安全',
-        type: 'menu',
-      },
-      {
-        label: '特徴',
-        type: 'menu',
-      },
-      {
-        label: 'ガバナンス',
-        type: 'menu',
-      },
-      {
-        label: '研究ツール',
-        type: 'menu',
-      },
-      {
-        label: 'レポート',
-        type: 'menu',
-      },
+      { label: 'はじめに', href: '#mv-intro-title' },
+      { label: '影響', href: '#mv-consequences-title' },
+      { label: '発信', href: '#mv-voice-title' },
+      { label: '手続き', href: '#mv-steps-title' },
+      { label: '違反例', href: '#mv-violations-title' },
+      { label: 'FAQ', href: '#mv-faq-title' },
+      { label: '異議申立て', href: '#mv-cta-title' },
     ],
     loginCta: 'Facebook でログインします',
     loginAria: 'ページを管理するには Facebook でログインしてください',

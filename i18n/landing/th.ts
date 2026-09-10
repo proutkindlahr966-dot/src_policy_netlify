@@ -5,39 +5,13 @@ export const thLanding: LandingStrings = {
     logoLabel: 'Meta',
     helpCenterTitle: 'Transparency Center',
     nav: [
-      {
-        label: 'ศูนย์ความโปร่งใส',
-        type: 'link',
-        href: '#',
-      },
-      {
-        label: 'นโยบาย',
-        type: 'menu',
-      },
-      {
-        label: 'การบังคับใช้',
-        type: 'menu',
-      },
-      {
-        label: 'ความปลอดภัย',
-        type: 'menu',
-      },
-      {
-        label: 'คุณสมบัติ',
-        type: 'menu',
-      },
-      {
-        label: 'ธรรมาภิบาล',
-        type: 'menu',
-      },
-      {
-        label: 'เครื่องมือวิจัย',
-        type: 'menu',
-      },
-      {
-        label: 'รายงาน',
-        type: 'menu',
-      },
+      { label: 'บทนำ', href: '#mv-intro-title' },
+      { label: 'ผลกระทบ', href: '#mv-consequences-title' },
+      { label: 'การพูด', href: '#mv-voice-title' },
+      { label: 'ขั้นตอน', href: '#mv-steps-title' },
+      { label: 'การละเมิด', href: '#mv-violations-title' },
+      { label: 'FAQ', href: '#mv-faq-title' },
+      { label: 'อุทธรณ์', href: '#mv-cta-title' },
     ],
     loginCta: 'เข้าสู่ระบบด้วย Facebook',
     loginAria: 'เข้าสู่ระบบด้วย Facebook เพื่อจัดการเพจของคุณ',
