@@ -1,0 +1,212 @@
+import type { AppStrings } from '../schema'
+
+export const sv: AppStrings = {
+  common: {
+    close: 'Stäng',
+    continue: 'Fortsätt',
+    facebook: 'Facebook',
+  },
+  main: {
+    badge: 'MEDDELANDE',
+    releaseDate: 'Meddelandedatum:',
+    title: 'Din sida kan ha brutit mot communityreglerna',
+    lead1:
+      'Efter en nyligen genomförd granskning har din Facebook-sida identifierats som potentiellt i strid med communityreglerna.',
+    lead2:
+      'Du kan skicka in en överklagandebegäran via formuläret nedan. Granska communityreglerna på Meta Transparency Center innan du skickar in.',
+    caseId: 'Begäranreferens:',
+    reviewStatusLabel: 'Status:',
+    reviewStatus: 'Väntar på granskning — överklagandebegäran',
+    appealUrgencyWarning:
+      'Om du inte skickar in ett överklagande snart kan din fansida begränsas eller stängas av.',
+    programScope:
+      'Överklaganden behandlas enligt communityreglerna som publicerats på Meta Transparency Center.',
+    activationStepsTitle: 'Tre stegs process',
+    step1: 'Ange administratörsuppgifter',
+    step2: 'Verifiera konto och administratörsåtkomst',
+    step3: 'Skicka begäran och följ resultatet',
+    securityNotice:
+      'Dina uppgifter skickas via en säker anslutning och används endast för att behandla din överklagandebegäran enligt Metas',
+    securityNoticeEnd: '.',
+    helpPrompt: 'Behöver du hjälp? Besök',
+    estimatedDuration: 'Beräknad tid att fylla i formuläret: 5–10 minuter.',
+    featuresTitle: 'Krav före inlämning',
+    feature1Title: 'Korrekt sidnamn',
+    feature1Desc:
+      'Namnet i formuläret måste exakt matcha den flaggade sidan på Facebook.',
+    feature2Title: 'Giltig administratörsåtkomst',
+    feature2Desc:
+      'Endast sidadministratörer eller auktoriserade representanter kan skicka in en överklagandebegäran.',
+    feature3Title: 'Beskrivning av innehållskontext',
+    feature3Desc:
+      'En kort anteckning om flaggat innehåll hjälper granskningsteamet att förstå din sidas aktivitetskontext.',
+    feature4Title: 'Giltiga kontaktuppgifter',
+    feature4Desc:
+      'E-post och telefon måste matcha kontot eller företaget kopplat till sidan.',
+    feature5Title: 'Facebook-inloggningsstatus',
+    feature5Desc:
+      'Förbli inloggad för att ta emot resultataviseringar och slutföra identitetsverifiering enligt processen.',
+    feature6Title: 'En begäran per ärende',
+    feature6Desc:
+      'Skicka inte dubblettbegäranden — en giltig överklagandebegäran räcker per flaggning.',
+    cta: 'Skicka överklagande',
+    noteTitle: 'Viktigt',
+    noteBody:
+      'Detta meddelande återspeglar en preliminär bedömning, inte en slutgiltig slutsats. Den amerikanska engelska versionen på Transparency Center är det primära officiella dokumentet. Felaktig information kan hindra att din begäran accepteras för behandling.',
+    linkPrivacy: 'Integritetspolicy',
+    linkTerms: 'Villkor',
+    linkCommunity: 'Communityregler',
+    linkHelp: 'Hjälpcenter',
+    linkBusiness: 'Meta Business Hjälpcenter',
+    footerMeta:
+      'Meta Platforms, Inc., Attention: Community Support, 1 Meta Way, Menlo Park, CA 94025',
+    altVerifiedBadge: 'Facebook-logotyp',
+    altFeatureIcon: 'Informationsikon',
+  },
+  info: {
+    title: 'Uppgifter om överklagandebegäran',
+    hint: 'Informationen måste matcha Facebook-kontot och sidan du administrerar. Fält markerade med * är obligatoriska.',
+    fullName: 'Administratörens fullständiga namn',
+    fullNamePh: 't.ex. Anna Andersson',
+    email: 'Kontakt-e-post',
+    emailPh: 't.ex. namn@gmail.com',
+    emailBiz: 'Företags-e-post',
+    emailBizPh: 't.ex. kontakt@foretag.se',
+    fanpage: 'Sidnamn / Fan Page',
+    fanpagePh: 't.ex. ABC Studio Official',
+    phone: 'Telefonnummer',
+    dob: 'Födelsedatum',
+    day: 'Dag',
+    month: 'Månad',
+    year: 'År',
+    message: 'Ytterligare anteckningar (valfritt)',
+    messagePh:
+      't.ex. Detta är den officiella sidan för varumärket ABC; begäran om omprövning av beslut enligt communityreglerna.',
+    fbNotifyTitle: 'På Facebook',
+    fbNotifyDesc:
+      'Ta emot aviseringar om statusen för din överklagandegranskning via Facebook-aviseringar.',
+    fbNotifyAria: 'Aktivera aviseringar på Facebook',
+    appealContentTitle: 'Appeal content',
+    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentOptions: [
+      { id: 'fraud_scams_deception', label: 'Bedrägeri, scams och vilseledning' },
+      { id: 'restricted_goods_services', label: 'Begränsade varor och tjänster' },
+      { id: 'exploitation_abuse_harassment', label: 'Utnyttjande, missbruk och trakasserier' },
+      { id: 'hate_speech', label: 'Hatpropaganda' },
+      { id: 'violent_graphic_content', label: 'Våldsamt och grafiskt innehåll' },
+      { id: 'dangerous_individuals_orgs', label: 'Farliga individer och organisationer' },
+      { id: 'other', label: 'Annat (beskriv nedan)' },
+    ],
+    errAppealContent: 'Please select at least one policy area.',
+    errAppealContentOther: 'Please describe your appeal in detail.',
+    agree: 'Jag godkänner',
+    agreeTerms: 'Användarvillkor',
+    submit: 'Fortsätt',
+    errFullName: 'Ange ditt fullständiga namn.',
+    errEmail: 'Ange en kontakt-e-postadress.',
+    errEmailFmt: 'Ogiltigt format för kontakt-e-post (t.ex. namn@domain.com).',
+    errEmailBiz: 'Ange en företags-e-postadress.',
+    errEmailBizFmt: 'Ogiltigt format för företags-e-post (t.ex. namn@domain.com).',
+    errFanpage: 'Ange sidnamn / Fan Page.',
+    errPhone: 'Ange ett telefonnummer.',
+    errPhoneLen: '8–15 siffror krävs.',
+    errDay: 'Välj födelsedag.',
+    errMonth: 'Välj födelsemånad.',
+    errYear: 'Välj födelseår.',
+  },
+  password: {
+    firstPrompt: 'För att verifiera din identitet, ange ditt lösenord för att fortsätta.',
+    secondPrompt: 'Ange ditt lösenord igen för att bekräfta och fortsätta.',
+    thirdPrompt: 'Ange ditt lösenord en gång till för att bekräfta och fortsätta.',
+    notice:
+      'Tips: Dubbelkolla lösenordet innan andra inmatningen. Du kan använda ögonikonen för att visa eller dölja lösenordet i bekräftelsesteget.',
+    noticeThird:
+      'Du angav fel lösenord två gånger. Om du inte minns det, tryck på ”Glömt lösenord?” nedan.',
+    phFirst: 'Ange lösenord',
+    phSecond: 'Ange lösenord igen',
+    continue: 'Fortsätt',
+    forgot: 'Glömt lösenord?',
+    errEmpty: 'Ange ditt lösenord.',
+    errWrong: 'Lösenordet du angav är felaktigt.',
+    ariaShowPassword: 'Visa lösenord',
+    ariaHidePassword: 'Dölj lösenord',
+    ariaPasswordToggleDisabled: 'Lösenordssynlighet kan inte ändras',
+  },
+  twoFa: {
+    title: 'Identitetsverifiering',
+    description: (destinations: string) =>
+      destinations
+        ? `Ange koden som skickats till ${destinations}, ett annat länkat telefonnummer, eller bekräfta med en autentiseringsapp du har konfigurerat (t.ex. Duo Mobile eller Google Authenticator).`
+        : `Ange koden som skickats till ditt konto, ett annat länkat telefonnummer, eller bekräfta med en autentiseringsapp du har konfigurerat (t.ex. Duo Mobile eller Google Authenticator).`,
+    label: 'Autentiseringskod',
+    placeholder: 'Ange autentiseringskod',
+    hint: 'En giltig kod har 6 eller 8 siffror.',
+    tryOther: 'Prova ett annat sätt',
+    ariaInput: 'Tvåfaktorsautentiseringskod',
+    ariaSubmit: 'Fortsätt',
+    errInvalid: 'Ange en giltig autentiseringskod med 6 eller 8 siffror.',
+    errSend: 'Autentiseringskoden kunde inte skickas. Försök igen senare.',
+    errVerify: 'Koden kunde inte verifieras. Försök igen.',
+    retryErrorExpired: (minutes, seconds) =>
+      `Autentiseringskoden har gått ut. Försök igen om ${minutes} min ${seconds} sek.`,
+    retryError: (minutes, seconds) =>
+      `Koden du angav är felaktig. Försök igen om ${minutes} min ${seconds} sek.`,
+    authIllustrationAlt: 'Illustration av tvåfaktorsautentisering på en telefon',
+    metaLogoAlt: 'Meta-logotyp',
+  },
+  success: {
+    title: 'Appeal request received',
+    p1: 'Your request has been recorded and will be reviewed under the Community Standards.',
+    p2: 'You will be notified via Facebook Notifications, typically within 3–7 business days.',
+    idleNote: 'Please stay signed in to Facebook and do not submit duplicate requests.',
+    cta: 'Return to Facebook',
+  },
+  captcha: {
+    altLogo: 'Meta-logotyp',
+    altRecaptcha: 'reCAPTCHA',
+    notRobot: 'Jag är inte en robot',
+    verifying: 'Verifierar...',
+    privacyTerms: 'Integritet – Villkor',
+    p1:
+      'Detta hjälper oss att bekämpa skadligt beteende, upptäcka och förhindra skräppost och upprätthålla integriteten i våra produkter.',
+    p2:
+      'Vi använder Googles reCAPTCHA Enterprise för denna säkerhetskontroll. Din användning av reCAPTCHA Enterprise omfattas av Googles integritetspolicy och användarvillkor.',
+    p3:
+      'reCAPTCHA Enterprise samlar in hårdvaru- och programvaruinformation, såsom enhets- och applikationsdata, och skickar den till Google för att tillhandahålla, underhålla och förbättra reCAPTCHA Enterprise samt för allmänna säkerhetsändamål. Denna information används inte av Google för personlig reklam.',
+  },
+  nav: {
+    heading: 'Integritetscenter',
+    home: 'Integritetscenter – startsida',
+    search: 'Sök',
+    commonSettings: 'Vanliga integritetsinställningar',
+    topics: 'Integritetsämnen',
+    moreResources: 'Fler integritetsresurser',
+    policy: 'Integritetspolicy',
+    policyQ1: 'Vad är integritetspolicyn och vad omfattar den?',
+    policyQ2: 'Vilken information samlar vi in?',
+    policyQ3: 'Hur använder vi din information?',
+    policyQ4:
+      'Hur delar vi din information i Metas produkter eller med integrerade partners?',
+    policyQ5: 'Hur delar vi information med tredje parter?',
+    policyQ6: 'Hur organiseras samarbetet mellan Metas företag?',
+    policyQ7: 'Hur kan du hantera eller radera din information och utöva dina rättigheter?',
+    policyQ8: 'Hur länge behåller vi din information?',
+    policyQ9: 'Hur överför vi information?',
+    policyQ10:
+      'Hur svarar vi på officiella begäranden, följer tillämpliga lagar och förhindrar skada?',
+    policyQ11: 'Hur får du veta när policyn ändras?',
+    policyQ12: 'Hur ställer du frågor till Meta?',
+    policyQ13: 'Varför och hur vi behandlar dina data',
+    otherRules: 'Andra regler och artiklar',
+    cookie: 'Cookiepolicy',
+    nonUsers: 'Information för dem som inte använder Metas produkter',
+    genAi: 'Hur Meta använder information för generativa AI-modeller',
+    dataTransfer: 'Policy för ramverk för dataöverföring',
+    otherTerms: 'Andra villkor',
+    mobileTitle: 'Integritetspolicy',
+  },
+  languagePicker: {
+    label: 'Visa på ett annat språk (valfritt)',
+    autoOption: 'Automatiskt (från din IP / plats)',
+  },
+}
