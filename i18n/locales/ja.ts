@@ -84,8 +84,8 @@ export const ja: AppStrings = {
     fbNotifyDesc:
       'Facebook 通知で異議申し立ての審査状況に関する通知を受け取ります。',
     fbNotifyAria: 'Facebook の通知を有効にする',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: '異議の内容',
+    appealContentHint: 'Fanpageが違反していないと考えるポリシー項目を選択してください。',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: '詐欺、スキャム、欺瞞的行為' },
       { id: 'restricted_goods_services', label: '制限された商品およびサービス' },
@@ -95,8 +95,8 @@ export const ja: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: '危険な個人および組織' },
       { id: 'other', label: 'その他（以下に記入）' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: '少なくとも1つのポリシー項目を選択してください。',
+    errAppealContentOther: '異議申し立ての理由を詳しく記入してください。',
     agree: '次に同意します：',
     agreeTerms: '利用規約',
     submit: '続行',

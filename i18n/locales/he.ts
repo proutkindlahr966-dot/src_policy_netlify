@@ -88,8 +88,8 @@ export const he: AppStrings = {
     fbNotifyDesc:
       'קבל התראות על סטטוס בדיקת הערעור שלך דרך התראות Facebook.',
     fbNotifyAria: 'הפעלת התראות ב-Facebook',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'תוכן הערעור',
+    appealContentHint: 'בחרו את תחומי המדיניות שלדעתכם הדף שלכם אינו מפר.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'הונאה, תרמיות ורמאות' },
       { id: 'restricted_goods_services', label: 'סחורות ושירותים מוגבלים' },
@@ -99,8 +99,8 @@ export const he: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'אנשים וארגונים מסוכנים' },
       { id: 'other', label: 'אחר (תארו למטה)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'נא לבחור לפחות תחום מדיניות אחד.',
+    errAppealContentOther: 'נא לתאר בפירוט את סיבת הערעור.',
     agree: 'אני מסכים/ה ל',
     agreeTerms: 'תנאי השימוש',
     submit: 'המשך',

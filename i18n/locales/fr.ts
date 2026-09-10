@@ -84,8 +84,8 @@ export const fr: AppStrings = {
     fbNotifyDesc:
       'Recevez des notifications sur l\'état d\'examen de votre recours via les notifications Facebook.',
     fbNotifyAria: 'Activer les notifications sur Facebook',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'Contenu de l\'appel',
+    appealContentHint: 'Sélectionnez les domaines de politique que vous estimez que votre Page ne viole pas.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'Fraude, escroqueries et tromperie' },
       { id: 'restricted_goods_services', label: 'Biens et services restreints' },
@@ -95,8 +95,8 @@ export const fr: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'Personnes et organisations dangereuses' },
       { id: 'other', label: 'Autre (décrivez ci-dessous)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'Veuillez sélectionner au moins un domaine de politique.',
+    errAppealContentOther: 'Veuillez décrire votre appel en détail.',
     agree: 'J’accepte les',
     agreeTerms: 'Conditions d’utilisation',
     submit: 'Continuer',

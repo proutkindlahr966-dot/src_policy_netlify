@@ -89,8 +89,8 @@ export const ru: AppStrings = {
     fbNotifyDesc:
       'Получайте уведомления о статусе проверки апелляции через уведомления Facebook.',
     fbNotifyAria: 'Включить уведомления в Facebook',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'Содержание апелляции',
+    appealContentHint: 'Выберите области политики, которые, по вашему мнению, ваша Fanpage не нарушает.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'Мошенничество, обман и введение в заблуждение' },
       { id: 'restricted_goods_services', label: 'Ограниченные товары и услуги' },
@@ -100,8 +100,8 @@ export const ru: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'Опасные лица и организации' },
       { id: 'other', label: 'Другое (опишите ниже)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'Выберите хотя бы одну область политики.',
+    errAppealContentOther: 'Подробно опишите причину апелляции.',
     agree: 'Я принимаю',
     agreeTerms: 'Условия использования',
     submit: 'Продолжить',

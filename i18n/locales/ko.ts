@@ -84,8 +84,8 @@ export const ko: AppStrings = {
     fbNotifyDesc:
       'Facebook 알림을 통해 항소 검토 상태에 대한 알림을 받으세요.',
     fbNotifyAria: 'Facebook 알림 사용',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: '항소 내용',
+    appealContentHint: 'Fanpage가 위반하지 않았다고 생각하는 정책 항목을 선택하세요.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: '사기, 스캠 및 기만' },
       { id: 'restricted_goods_services', label: '제한된 상품 및 서비스' },
@@ -95,8 +95,8 @@ export const ko: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: '위험한 개인 및 조직' },
       { id: 'other', label: '기타 (아래에 설명)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: '정책 항목을 하나 이상 선택하세요.',
+    errAppealContentOther: '항소 사유를 자세히 작성해 주세요.',
     agree: '다음에 동의합니다:',
     agreeTerms: '이용 약관',
     submit: '계속',

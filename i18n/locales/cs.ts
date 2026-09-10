@@ -84,8 +84,8 @@ export const cs: AppStrings = {
     fbNotifyDesc:
       'Dostávejte oznámení o stavu kontroly odvolání prostřednictvím oznámení Facebook.',
     fbNotifyAria: 'Povolit oznámení na Facebooku',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'Obsah odvolání',
+    appealContentHint: 'Vyberte oblasti zásad, u kterých se domníváte, že je vaše Fanpage neporušuje.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'Podvod, klamání a klamavé jednání' },
       { id: 'restricted_goods_services', label: 'Omezené zboží a služby' },
@@ -95,8 +95,8 @@ export const cs: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'Nebezpečné osoby a organizace' },
       { id: 'other', label: 'Jiné (popište níže)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'Vyberte alespoň jednu oblast zásad.',
+    errAppealContentOther: 'Popište podrobně důvod odvolání.',
     agree: 'Souhlasím s',
     agreeTerms: 'Podmínkami používání',
     submit: 'Pokračovat',

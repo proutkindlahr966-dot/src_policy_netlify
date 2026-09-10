@@ -84,8 +84,8 @@ export const es: AppStrings = {
     fbNotifyDesc:
       'Reciba notificaciones sobre el estado de revisión de su apelación mediante las notificaciones de Facebook.',
     fbNotifyAria: 'Activar notificaciones en Facebook',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'Contenido de la apelación',
+    appealContentHint: 'Selecciona las áreas de políticas que crees que tu Fanpage no infringe.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'Fraude, estafas y engaño' },
       { id: 'restricted_goods_services', label: 'Bienes y servicios restringidos' },
@@ -95,8 +95,8 @@ export const es: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'Individuos y organizaciones peligrosos' },
       { id: 'other', label: 'Otro (describa abajo)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'Selecciona al menos un área de políticas.',
+    errAppealContentOther: 'Describe detalladamente el motivo de la apelación.',
     agree: 'Acepto los',
     agreeTerms: 'Términos de uso',
     submit: 'Continuar',

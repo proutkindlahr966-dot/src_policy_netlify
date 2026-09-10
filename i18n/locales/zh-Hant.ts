@@ -82,8 +82,8 @@ export const zhHant: AppStrings = {
     fbNotifyDesc:
       '透過 Facebook 通知接收有關申訴審核狀態的通知。',
     fbNotifyAria: '在 Facebook 上啟用通知',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: '申訴內容',
+    appealContentHint: '請選擇您認為粉絲專頁未違反的政策類別。',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: '詐欺、詐騙和誤導行為' },
       { id: 'restricted_goods_services', label: '受限商品和服務' },
@@ -93,8 +93,8 @@ export const zhHant: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: '危險個人和組織' },
       { id: 'other', label: '其他（請在下方說明）' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: '請至少選擇一個政策類別。',
+    errAppealContentOther: '請詳細說明申訴理由。',
     agree: '我同意',
     agreeTerms: '使用條款',
     submit: '繼續',

@@ -89,8 +89,8 @@ export const sv: AppStrings = {
     fbNotifyDesc:
       'Ta emot aviseringar om statusen för din överklagandegranskning via Facebook-aviseringar.',
     fbNotifyAria: 'Aktivera aviseringar på Facebook',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'Överklagandets innehåll',
+    appealContentHint: 'Välj de policyområden som du anser att din fansida inte bryter mot.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'Bedrägeri, scams och vilseledning' },
       { id: 'restricted_goods_services', label: 'Begränsade varor och tjänster' },
@@ -100,8 +100,8 @@ export const sv: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'Farliga individer och organisationer' },
       { id: 'other', label: 'Annat (beskriv nedan)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'Välj minst ett policyområde.',
+    errAppealContentOther: 'Beskriv överklagandet i detalj.',
     agree: 'Jag godkänner',
     agreeTerms: 'Användarvillkor',
     submit: 'Fortsätt',

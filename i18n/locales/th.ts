@@ -84,8 +84,8 @@ export const th: AppStrings = {
     fbNotifyDesc:
       'รับการแจ้งเตือนเกี่ยวกับสถานะการตรวจสอบอุทธรณ์ของคุณผ่านการแจ้งเตือน Facebook',
     fbNotifyAria: 'เปิดการแจ้งเตือนบน Facebook',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'เนื้อหาการอุทธรณ์',
+    appealContentHint: 'เลือกหัวข้อนโยบายที่คุณเชื่อว่า Fanpage ของคุณไม่ได้ละเมิด',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'การฉ้อโกง สแกม และการหลอกลวง' },
       { id: 'restricted_goods_services', label: 'สินค้าและบริการที่ถูกจำกัด' },
@@ -95,8 +95,8 @@ export const th: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'บุคคลและองค์กรที่เป็นอันตราย' },
       { id: 'other', label: 'อื่นๆ (อธิบายด้านล่าง)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'โปรดเลือกหัวข้อนโยบายอย่างน้อยหนึ่งรายการ',
+    errAppealContentOther: 'โปรดอธิบายเหตุผลการอุทธรณ์โดยละเอียด',
     agree: 'ข้าพเจ้ายอมรับ',
     agreeTerms: 'ข้อกำหนดการใช้งาน',
     submit: 'ดำเนินการต่อ',

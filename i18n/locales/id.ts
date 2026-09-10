@@ -84,8 +84,8 @@ export const id: AppStrings = {
     fbNotifyDesc:
       'Terima notifikasi tentang status peninjauan banding Anda melalui Notifikasi Facebook.',
     fbNotifyAria: 'Aktifkan notifikasi di Facebook',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'Isi banding',
+    appealContentHint: 'Pilih area kebijakan yang menurut Anda tidak dilanggar oleh Fanpage Anda.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'Penipuan, scam, dan penyesatan' },
       { id: 'restricted_goods_services', label: 'Barang dan layanan terbatas' },
@@ -95,8 +95,8 @@ export const id: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'Individu dan organisasi berbahaya' },
       { id: 'other', label: 'Lainnya (jelaskan di bawah)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'Pilih setidaknya satu area kebijakan.',
+    errAppealContentOther: 'Jelaskan alasan banding Anda secara detail.',
     agree: 'Saya setuju dengan',
     agreeTerms: 'Ketentuan Penggunaan',
     submit: 'Lanjutkan',

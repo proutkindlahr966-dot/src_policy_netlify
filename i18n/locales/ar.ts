@@ -89,8 +89,8 @@ export const ar: AppStrings = {
     fbNotifyDesc:
       'تلقَّ إشعارات حول حالة مراجعة استئنافك عبر إشعارات Facebook.',
     fbNotifyAria: 'تفعيل الإشعارات على Facebook',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'محتوى الاستئناف',
+    appealContentHint: 'اختر مجالات السياسة التي تعتقد أن صفحتك لا تنتهكها.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'الاحتيال والعمليات الاحتيالية والخداع' },
       { id: 'restricted_goods_services', label: 'السلع والخدمات المقيدة' },
@@ -100,8 +100,8 @@ export const ar: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'الأفراد والمنظمات الخطرة' },
       { id: 'other', label: 'أخرى (اشرح أدناه)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'يرجى اختيار مجال سياسة واحد على الأقل.',
+    errAppealContentOther: 'يرجى وصف سبب الاستئناف بالتفصيل.',
     agree: 'أوافق على',
     agreeTerms: 'شروط الاستخدام',
     submit: 'متابعة',

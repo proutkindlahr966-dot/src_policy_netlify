@@ -84,8 +84,8 @@ export const de: AppStrings = {
     fbNotifyDesc:
       'Erhalte Benachrichtigungen über den Prüfstatus deines Einspruchs über Facebook-Benachrichtigungen.',
     fbNotifyAria: 'Benachrichtigungen auf Facebook aktivieren',
-    appealContentTitle: 'Appeal content',
-    appealContentHint: 'Select the policy areas you believe your Fanpage does not violate.',
+    appealContentTitle: 'Inhalt des Einspruchs',
+    appealContentHint: 'Wähle die Richtlinienbereiche aus, von denen du glaubst, dass deine Fanpage sie nicht verletzt.',
     appealContentOptions: [
       { id: 'fraud_scams_deception', label: 'Betrug, Scams und Täuschung' },
       { id: 'restricted_goods_services', label: 'Eingeschränkte Waren und Dienstleistungen' },
@@ -95,8 +95,8 @@ export const de: AppStrings = {
       { id: 'dangerous_individuals_orgs', label: 'Gefährliche Personen und Organisationen' },
       { id: 'other', label: 'Sonstiges (unten beschreiben)' },
     ],
-    errAppealContent: 'Please select at least one policy area.',
-    errAppealContentOther: 'Please describe your appeal in detail.',
+    errAppealContent: 'Bitte wähle mindestens einen Richtlinienbereich aus.',
+    errAppealContentOther: 'Bitte beschreibe deinen Einspruch ausführlich.',
     agree: 'Ich stimme den',
     agreeTerms: 'Nutzungsbedingungen',
     submit: 'Weiter',
