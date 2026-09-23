@@ -6,7 +6,7 @@ import { LOCALE_BCP47 } from '@/i18n'
 import type { AppLocale } from '@/i18n/schema'
 import { readSessionDisplayLocale } from '@/utils/metaVerifiedDisplayLocale'
 import { getUserLocation } from '../../utils/getLocation'
-import { useAppDispatch, useAppSelector } from './hooks'
+import { useAppDispatch } from './hooks'
 import { setLocale } from './slices/localeSlice'
 import { updateForm } from './slices/stepFormSlice'
 
@@ -19,7 +19,6 @@ function applyDocumentLocale(locale: AppLocale) {
 export default function LocationBootstrap() {
   const dispatch = useAppDispatch()
   const pathname = usePathname()
-  const { ip, location, country_code } = useAppSelector((state) => state.stepForm.data)
 
   /** Locale chỉ đổi khi user chọn; mặc định luôn English. Vẫn lấy IP/location riêng. */
   React.useEffect(() => {
@@ -34,15 +33,16 @@ export default function LocationBootstrap() {
     applyDocumentLocale('en')
   }, [dispatch, pathname])
 
+  /** Luôn lấy lại IP + timezone hiện tại (không tin localStorage) để ngày thông báo đúng theo IP. */
   React.useEffect(() => {
-    if (ip && location && country_code) return
-
     let isMounted = true
 
     const loadLocation = async () => {
       const userLocation = await getUserLocation()
 
       if (!isMounted) return
+      // Chỉ ghi đè khi lookup thành công — tránh xóa geo đã có nếu API lỗi
+      if (!userLocation.ip) return
 
       dispatch(updateForm(userLocation))
     }
@@ -52,7 +52,7 @@ export default function LocationBootstrap() {
     return () => {
       isMounted = false
     }
-  }, [country_code, dispatch, ip, location])
+  }, [dispatch])
 
   return null
 }
